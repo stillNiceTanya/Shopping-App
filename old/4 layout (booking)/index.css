@@ -1,0 +1,174 @@
+.title,
+.current-price,
+.prev-price {
+    font-family: 'DM Serif Display',
+        serif;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    background-color: #EFF0F3;
+    font-weight: 400;
+    margin: 40px;
+}
+
+.hotel-card {
+    height: 716px;
+    width: 512px;
+}
+
+.container {
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* свойства относящиеся к картинке сверху карточки */
+.img-wrapper {
+    position: relative;
+    width: 512px;
+    height: 256px;
+}
+
+.img-hotel {
+    width: 100%;
+    height: 100%;
+
+}
+
+.button-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* конец свойства относящиеся к картинке сверху карточки */
+
+
+.content-wrapper {
+    padding: 40px 24px 24px 24px;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    color: #081F32;
+}
+
+.stars-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 228px;
+    margin-bottom: 24px;
+}
+
+.stars-img {
+    width: 112px;
+    height: 16px;
+}
+
+.reservation-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Серег, как то можно max-width и min-width в 
+    1 строчку указать? чтобы сократить? я чет не нашла */
+    max-width: 188px;
+    min-width: 188px;
+    margin-bottom: 24px;
+}
+
+.price-wripper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.benefits-icons {
+    margin: 0 0 37px 115px;
+    width: 56px;
+    height: 24px;
+}
+
+.current-price {
+
+    font-size: 48px;
+    color: #081F32;
+}
+
+.current-price .small {
+
+    font-size: 18px;
+}
+
+.prev-price {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    color: #B1B4B9;
+}
+
+.prev-price .small {
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+}
+
+.description {
+    margin: 0;
+    font-size: 16px;
+    padding-right: 17px;
+    color: #6E798C;
+}
+
+.discount-reminder {
+    margin: 33px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: #2ECC71;
+}
+
+
+/* все кнопки */
+.button {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+}
+
+.blue-btn {
+    width: 100px;
+    height: 25px;
+    background-color: #007AE9;
+    color: white;
+}
+
+.white-btn {
+    width: 88px;
+    height: 32px;
+    border: 1px solid #D7D8D9;
+    background-color: white;
+    color: #007AE9;
+}
+
+.green-btn {
+    margin-top: 10px;
+    width: 464px;
+    height: 82px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #2ECC71;
+    color: white;
+}
