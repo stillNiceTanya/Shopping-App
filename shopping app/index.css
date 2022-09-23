@@ -141,15 +141,16 @@ nav {
     margin-right: 34px;
 }
 
-.brands-list {
+.brands {
     height: 186px;
     background-color: #EBD96B;
 }
 
-.brands-icons {
+.brands-list {
     list-style: none;
     padding: 57px 145px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
+
 }
