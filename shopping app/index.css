@@ -34,7 +34,7 @@ body {
   line-height: 60px;
 }
 
-.nav-signUp {
+.nav-sign-up {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,6 +62,10 @@ nav {
   color: white;
   border: none;
   cursor: pointer;
+}
+.hyperlink-button:hover {
+  transition: transform 0.3s;
+  transform: scale(1.07);
 }
 
 .hero-section {
@@ -149,7 +153,7 @@ nav {
   align-items: center;
 }
 
-.slaider-wrapper {
+.slider-wrapper {
   padding: 69px 50px 0 50px;
 }
 
@@ -169,7 +173,7 @@ nav {
   line-height: 50px;
 }
 
-.slaider {
+.slider {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
@@ -203,30 +207,28 @@ nav {
   color: #7f7f7f;
 }
 
-/* .card {
-  cursor: pointer;
-} */
-
-/* 
-что-то делает класс card ? 
-потому что курсор добавила в <a>
-*/
-
-a {
+.slider-link,
+.nav-link {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
   transition: transform 0.3s;
 }
 
-a:hover {
+.slider-link:hover {
   transform: scale(1.05);
   text-shadow: 2px 1px 3px #ebd96b;
 }
 
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
 .banner-wripper {
+  z-index: 1;
+  position: relative;
   display: flex;
-  padding: 100px 200px 100px 1050px;
+  padding: 125px 200px 133px 1050px;
   justify-content: flex-end;
   background: linear-gradient(
     1.32deg,
@@ -253,11 +255,25 @@ a:hover {
   );
 }
 
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 992px;
+}
+
 .sale-title {
   margin: 0;
   font-weight: 900;
   font-size: 111px;
   line-height: 137px;
+}
+
+.white-in-sale {
+  width: 541px;
+  height: 130px;
+  top: 124px;
+  right: 358px;
 }
 
 .sale-description {
@@ -291,4 +307,4 @@ a:hover {
 
 /* Остановилась на 
 - добавить картинку как бэграунд 
-- проверить можно ли вынести общее у h2 & p*/
+*/
