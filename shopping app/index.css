@@ -224,7 +224,7 @@ nav {
   transform: scale(1.1);
 }
 
-.banner-wripper {
+.banner-wrapper {
   z-index: 1;
   position: relative;
   display: flex;
@@ -255,6 +255,9 @@ nav {
   );
 }
 
+.sale-wrapper {
+  z-index: 2;
+}
 .banner-background {
   position: absolute;
   top: 0;
@@ -263,6 +266,7 @@ nav {
 }
 
 .sale-title {
+  position: relative;
   margin: 0;
   font-weight: 900;
   font-size: 111px;
@@ -272,8 +276,8 @@ nav {
 .white-in-sale {
   width: 541px;
   height: 130px;
-  top: 124px;
-  right: 358px;
+  top: 5px;
+  left: -26px;
 }
 
 .sale-description {
