@@ -321,6 +321,6 @@ nav {
   line-height: 42px;
 }
 
-/* Остановилась на 
-- добавить картинку как бэграунд 
-*/
+.favourite-wrapper {
+  padding: 150px 50px 0 50px;
+}
