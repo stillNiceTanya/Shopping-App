@@ -131,6 +131,10 @@ nav {
 }
 
 .hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-left: 34px;
   border-radius: 10px;
   width: 221px;
@@ -228,7 +232,7 @@ nav {
   z-index: 1;
   position: relative;
   display: flex;
-  padding: 125px 200px 133px 1050px;
+  padding: 125px 200px 133px 200px;
   justify-content: flex-end;
   background: linear-gradient(
     1.32deg,
@@ -257,7 +261,9 @@ nav {
 
 .sale-wrapper {
   z-index: 2;
+  width: 666px;
 }
+
 .banner-background {
   position: absolute;
   top: 0;
@@ -304,9 +310,15 @@ nav {
 }
 
 .sale-button {
-  width: 265.62px;
-  height: 95.33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 266px;
+  height: 95px;
   font-weight: 600px;
+  font-size: 28px;
+  line-height: 42px;
 }
 
 /* Остановилась на 
