@@ -331,10 +331,6 @@ nav {
   padding: 0 168px 0 169px;
 }
 
-.app-icons-wrapper {
-  display: inline-block;
-}
-
 .app-description-wrapper {
   padding-top: 200px;
   width: 510px;
@@ -357,6 +353,24 @@ nav {
   color: #7c7c7c;
 }
 
-.download-icon {
+.download-button {
+  display: inline-block;
   margin-right: 19px;
+  width: 204px;
+  height: 71px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.download-button:hover {
+  cursor: pointer;
+}
+
+.app-store {
+  background-image: url("img/button-appStore.png");
+}
+
+.google-store {
+  background-image: url("img/button-goople.png");
 }
