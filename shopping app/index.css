@@ -326,7 +326,8 @@ nav {
 }
 
 .app-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   padding: 0 168px 0 169px;
 }
 
@@ -336,14 +337,15 @@ nav {
 
 .app-description-wrapper {
   padding-top: 200px;
-  width: 507px;
+  width: 510px;
 }
 
 .app-title {
   margin: 0;
   font-weight: 900;
   font-size: 48px;
-  line-height: 150%;
+  line-height: 72px;
+  letter-spacing: 0.06em;
 }
 
 .app-subtitle {
@@ -357,10 +359,4 @@ nav {
 
 .download-icon {
   margin-right: 19px;
-}
-
-.app-pic {
-  position: absolute;
-  top: 0;
-  right: 243px;
 }
