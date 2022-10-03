@@ -324,3 +324,43 @@ nav {
 .favourite-wrapper {
   padding: 150px 50px 0 50px;
 }
+
+.app-wrapper {
+  position: relative;
+  padding: 0 168px 0 169px;
+}
+
+.app-icons-wrapper {
+  display: inline-block;
+}
+
+.app-description-wrapper {
+  padding-top: 200px;
+  width: 507px;
+}
+
+.app-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.app-subtitle {
+  margin-top: 41px;
+  margin-bottom: 65px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #7c7c7c;
+}
+
+.download-icon {
+  margin-right: 19px;
+}
+
+.app-pic {
+  position: absolute;
+  top: 0;
+  right: 243px;
+}
