@@ -63,7 +63,6 @@ nav {
   border: none;
   cursor: pointer;
 }
-
 .hyperlink-button:hover {
   transition: transform 0.3s;
   transform: scale(1.07);
@@ -132,6 +131,10 @@ nav {
 }
 
 .hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-left: 34px;
   border-radius: 10px;
   width: 221px;
@@ -224,3 +227,100 @@ nav {
 .nav-link:hover {
   transform: scale(1.1);
 }
+
+.banner-wrapper {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  padding: 125px 200px 133px 200px;
+  justify-content: flex-end;
+  background: linear-gradient(
+    1.32deg,
+    #e0c340 0.13%,
+    #dfc23e 3.97%,
+    #e1c441 7.2%,
+    #e3c743 10.13%,
+    #e4c542 12.98%,
+    #e6c744 15.99%,
+    #e7c845 19.52%,
+    #e5c643 23.96%,
+    #e6c945 30.43%,
+    #e3c743 36.49%,
+    #e9ca48 42.49%,
+    #edce49 49.35%,
+    #f0d44c 55.42%,
+    #f4d84f 61.43%,
+    #f6da52 65.74%,
+    #f7db53 72.23%,
+    #f9dd55 77.43%,
+    #f9df56 83.84%,
+    #fae157 91.52%,
+    #f9df56 97.87%
+  );
+}
+
+.sale-wrapper {
+  z-index: 2;
+  width: 666px;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 992px;
+}
+
+.sale-title {
+  position: relative;
+  margin: 0;
+  font-weight: 900;
+  font-size: 111px;
+  line-height: 137px;
+}
+
+.white-in-sale {
+  width: 541px;
+  height: 130px;
+  top: 5px;
+  left: -26px;
+}
+
+.sale-description {
+  margin-top: 33px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.sale-period {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.sale-additional {
+  margin-top: 10px;
+  margin-bottom: 51px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.sale-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 266px;
+  height: 95px;
+  font-weight: 600px;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+/* Остановилась на 
+- добавить картинку как бэграунд 
+*/
