@@ -328,11 +328,11 @@ nav {
 .app-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 168px 0 169px;
 }
 
 .app-description-wrapper {
-  padding-top: 200px;
   width: 510px;
 }
 
@@ -361,10 +361,6 @@ nav {
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-
-.download-button:hover {
-  cursor: pointer;
 }
 
 .app-store {
