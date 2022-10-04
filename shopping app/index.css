@@ -390,3 +390,31 @@ nav {
   font-size: 32px;
   line-height: 35px;
 }
+
+.form {
+  position: relative;
+  text-align: center;
+}
+
+.email {
+  padding-left: 27px;
+  width: 574px;
+  height: 87px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #767676;
+  border: none;
+}
+
+.email-button {
+  position: absolute;
+  width: 161px;
+  height: 67px;
+  top: 10px;
+  right: 215px;
+  border-radius: 8px;
+}
