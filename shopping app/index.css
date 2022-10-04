@@ -324,3 +324,49 @@ nav {
 .favourite-wrapper {
   padding: 150px 50px 0 50px;
 }
+
+.app-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 168px 0 169px;
+}
+
+.app-description-wrapper {
+  width: 510px;
+}
+
+.app-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.06em;
+}
+
+.app-subtitle {
+  margin-top: 41px;
+  margin-bottom: 65px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #7c7c7c;
+}
+
+.download-button {
+  display: inline-block;
+  margin-right: 19px;
+  width: 204px;
+  height: 71px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.app-store {
+  background-image: url("img/button-appStore.png");
+}
+
+.google-store {
+  background-image: url("img/button-goople.png");
+}
