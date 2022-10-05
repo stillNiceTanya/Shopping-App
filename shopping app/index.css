@@ -391,12 +391,12 @@ nav {
   line-height: 35px;
 }
 
-.form {
+.community-form {
   position: relative;
   text-align: center;
 }
 
-.email {
+.form-input {
   padding-left: 27px;
   width: 574px;
   height: 87px;
@@ -410,7 +410,7 @@ nav {
   border: none;
 }
 
-.email-button {
+.form-button {
   position: absolute;
   width: 161px;
   height: 67px;
