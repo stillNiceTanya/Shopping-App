@@ -418,3 +418,88 @@ nav {
   right: 215px;
   border-radius: 8px;
 }
+
+.footer-wrapper {
+  display: flex;
+  padding: 119px 50px 147px 50px;
+  background-color: #000000;
+}
+
+.footer-additional {
+  width: 440px;
+}
+
+.footer-title {
+  margin: 0;
+  padding-bottom: 32px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.footer-subtitle {
+  margin: 0;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #8e8e8e;
+}
+
+.social-media {
+  display: inline-block;
+  margin-right: 14px;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.facebook {
+  background-image: url("img/facebook.svg");
+}
+
+.insta {
+  background-image: url("img/insta.svg");
+}
+
+.twit {
+  background-image: url("img/twit.svg");
+}
+
+.linkedin {
+  background-image: url("img/linkedin.svg");
+}
+
+.footer-links {
+  margin-left: 415px;
+  display: flex;
+  align-content: space-between;
+  height: 273px;
+  white-space: nowrap;
+  color: #8e8e8e;
+}
+
+.companyp-links,
+.additional-links {
+  margin: 0 188px 0 0;
+  padding: 0;
+}
+
+.policy-links {
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+
+.capital-link {
+  color: #d9d9d9;
+}
