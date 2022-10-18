@@ -1,6 +1,14 @@
+:root {
+  --orange-color: #ff6551;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 .img-cover {
   object-fit: cover;
+}
+
+.login-link {
+  color: var(--orange-color);
 }
