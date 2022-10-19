@@ -1,5 +1,7 @@
 :root {
   --orange-color: #ff6551;
+  --text-color: #252b42;
+  --second-text-color: #737373;
 }
 
 body {
@@ -7,8 +9,81 @@ body {
 }
 .img-cover {
   object-fit: cover;
+  z-index: -1;
 }
 
-.login-link {
+.img-filter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    89.83deg,
+    #ffffff 14.24%,
+    #ffffff 14.25%,
+    rgba(255, 255, 255, 0) 99.55%
+  );
+}
+
+.login-link,
+.hero-subtitle {
   color: var(--orange-color);
+}
+
+.button-link {
+  width: 135px;
+  height: 52px;
+  background-color: var(--orange-color);
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.navbar-title,
+.hero-title,
+.login-link:hover {
+  color: var(--text-color);
+}
+
+.navbar-link,
+.hero-description {
+  color: var(--second-text-color);
+}
+
+.hero-description {
+  width: 338px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.navbar-title {
+  text-decoration: none;
+}
+
+.navbar-link:hover,
+.navbar-title:hover {
+  color: var(--text-color);
+}
+
+.navbar-title:hover {
+  color: var(--second-text-color);
 }
