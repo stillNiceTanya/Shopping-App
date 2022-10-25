@@ -1,12 +1,17 @@
 :root {
   --orange-color: #ff6551;
   --text-color: #252b42;
-  --second-text-color: #737373;
+  --text-secondary: #737373;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
+.hero-section {
+  padding-bottom: 60px;
+}
+
 .img-cover {
   object-fit: cover;
   z-index: -1;
@@ -62,9 +67,13 @@ body {
   color: var(--text-color);
 }
 
-.navbar-link,
+.navbar-title {
+  margin: 0;
+}
+
+.navbar-item,
 .hero-description {
-  color: var(--second-text-color);
+  color: var(--text-secondary);
 }
 
 .hero-description {
@@ -75,15 +84,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-.navbar-title {
-  text-decoration: none;
-}
-
-.navbar-link:hover,
-.navbar-title:hover {
+.navbar-item:hover {
   color: var(--text-color);
-}
-
-.navbar-title:hover {
-  color: var(--second-text-color);
 }
