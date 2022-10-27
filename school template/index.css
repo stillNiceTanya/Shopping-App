@@ -41,7 +41,7 @@ body {
 
 .hero-title,
 .button-link,
-.button-block,
+.button-subscription,
 .subscription-subtitle,
 .subscription-title,
 .subscription-benefits,
@@ -53,7 +53,7 @@ body {
 }
 
 .button-link,
-.button-block,
+.button-subscription,
 .subscription-subtitle,
 .subscription-benefits,
 .pricing-description,
@@ -66,7 +66,7 @@ body {
   height: 52px;
 }
 
-.button-block,
+.button-subscription,
 .button-link {
   background-color: var(--orange-color);
   border: none;
@@ -78,7 +78,7 @@ body {
 }
 
 .button-link:hover,
-.button-block:hover {
+.button-subscription:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
@@ -115,14 +115,9 @@ body {
   color: var(--text-color);
 }
 
-.subscription-wrapper {
-  width: 350px;
-}
-
 .subscription-section {
   background-color: var(--text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .subscription-subtitle,
@@ -151,15 +146,15 @@ body {
   line-height: 20px;
 }
 
-.subscription-list {
+.subscription-benefits {
   list-style-type: none;
 }
 
-.subscription-icon {
+.check-icon {
   margin-right: 8px;
 }
 
-.subscription-benefits {
+.benefit-item {
   display: flex;
   align-items: flex-start;
 }
