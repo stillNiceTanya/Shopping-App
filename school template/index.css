@@ -115,7 +115,8 @@ body {
   color: var(--text-color);
 }
 
-.subscription-section {
+.subscription-section,
+.js-subscription-section {
   background-color: var(--text-color);
   padding: 100px 0;
 }
