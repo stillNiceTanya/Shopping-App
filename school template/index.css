@@ -94,6 +94,11 @@ body {
 .login-link:hover {
   color: var(--text-color);
 }
+/* 
+.login-link {
+  border: none;
+  background: none;
+} */
 
 .navbar-item,
 .hero-description,

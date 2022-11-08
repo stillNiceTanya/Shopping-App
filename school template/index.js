@@ -149,27 +149,6 @@ function createListItem(text, src) {
   li.append(textNode);
   return li;
 }
-// listSubscriptionBenefits.append(
-//   createListItem("Included benefit #1", "img/successful-choice-icon.svg")
-// );
-// listSubscriptionBenefits.append(
-//   createListItem("Included benefit #2", "img/successful-choice-icon.svg")
-// );
-// listSubscriptionBenefits.append(
-//   createListItem("Included benefit #3", "img/successful-choice-icon.svg")
-// );
-// listSubscriptionBenefits.append(
-//   createListItem(
-//     "Non-included benefit #1",
-//     "img/non-successful-choice-icon.svg "
-//   )
-// );
-// listSubscriptionBenefits.append(
-//   createListItem(
-//     "Non-included benefit #1",
-//     "img/non-successful-choice-icon.svg"
-//   )
-// );
 
 let benefitList = [
   { text: "Included benefit #1", imgSrc: "img/successful-choice-icon.svg" },
@@ -184,14 +163,67 @@ let benefitList = [
     imgSrc: "img/non-successful-choice-icon.svg",
   },
 ];
-// способ который создает массив узлов
-// let benefitNodeList = benefitList.map((item) =>
-//   createListItem(item.text, item.imgSrc)
+// способ который создает массив узлов, но его нужно отдельно вернуть
+let benefitNodeList = benefitList.map((item) =>
+  createListItem(item.text, item.imgSrc)
+);
+
+listSubscriptionBenefits.append(...benefitNodeList);
+
+// способ forEach который не создает, а проходится по элементам
+// benefitList.forEach((item) =>
+//   listSubscriptionBenefits.append(createListItem(item.text, item.imgSrc))
 // );
 
-// listSubscriptionBenefits.append(...benefitNodeList);
+//  ADD WORKING BUTTONS
+conteinerSubscriptionSection.setAttribute("id", "SubscriptionSection");
+let loginForm = document.querySelector("#authorization"); // форма
 
-// способ форичом который не создает, а проходится по элементам
-benefitList.forEach((item) =>
-  listSubscriptionBenefits.append(createListItem(item.text, item.imgSrc))
-);
+loginForm.addEventListener("submit", handler);
+
+function handler(event) {
+  event.preventDefault();
+  let form = event.target;
+  let { value: loginValue } = form.loginInput;
+  let { value: passwordValue } = form.passwordInput;
+
+  if (!loginValue || !passwordValue) {
+    return;
+  }
+  localStorage.setItem("log", `${loginValue}`);
+  localStorage.setItem("pas", `${passwordValue}`);
+  // console.log(loginValue);
+  // console.log(passwordValue);
+  location.reload();
+}
+
+window.onload = function () {
+  // console.log(localStorage.getItem("log"));
+  if (!localStorage.getItem("log")) {
+    return;
+  }
+
+  let b1 = document.querySelector("#loginButton");
+  let b2 = document.querySelector("#logoutButton");
+  b1.classList.add("d-none");
+  b2.classList.remove("d-none");
+
+  b2.addEventListener("click", logOut);
+};
+function logOut() {
+  localStorage.removeItem("log");
+  localStorage.removeItem("pas");
+  location.reload();
+}
+
+// наша стр перезагрузилась 197
+// дожидаемся момента load. пишем обработчик на это событие 200
+// когда событие происходит:
+// проверяем наличие локал сторадж. если нужных значений нет - тогда ничего не проиходит
+// проверяем наличие локал сторадж. если нужные значения есть - тогда
+// поменять местами кнопки (login кнопку скрыть, log out показать)
+//
+// нажимаем на logout
+// создаем обработчик, кот срабатывает при нажатии логаут
+// удаляем данные из локал сторадж
+// перезагружаем стр
